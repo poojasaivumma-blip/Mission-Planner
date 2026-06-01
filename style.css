@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #020024, #090979, #00d4ff);
+  color: white;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* TITLE */
+.title-box {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: 0.3s;
+}
+
+.title-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0,255,255,0.4);
+}
+
+/* PROGRESS */
+.progress-section {
+  margin-top: 20px;
+}
+
+.stats {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#progressFill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #00ffcc, #00aaff);
+  transition: 0.4s ease;
+}
+
+.percent {
+  text-align: right;
+  font-size: 13px;
+  margin-top: 5px;
+  opacity: 0.8;
+}
+
+/* INPUT */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.input-section input,
+.input-section select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input-section input:focus,
+.input-section select:focus {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(0,255,255,0.3);
+}
+
+#missionInput {
+  flex: 2;
+}
+
+#addBtn {
+  background: #00d4ff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#addBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,255,255,0.4);
+}
+
+/* MISSION CARD */
+.mission {
+  background: rgba(0,0,0,0.4);
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  transition: 0.3s;
+}
+
+.mission:hover {
+  transform: translateX(5px);
+  box-shadow: 0 0 15px rgba(0,255,255,0.2);
+}
+
+/* PRIORITY BAR (NO TEXT COLOR) */
+.priority-bar {
+  width: 6px;
+  height: 40px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.low { background: #00ff88; }
+.medium { background: #ffb300; }
+.high { background: #ff3b3b; }
+
+/* LEFT SIDE */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* COMPLETED */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* OVERDUE */
+.overdue {
+  border: 1px solid red;
+  box-shadow: 0 0 10px rgba(255,0,0,0.4);
+}
+
+/* DELETE */
+.deleteBtn {
+  background: crimson;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.deleteBtn:hover {
+  transform: scale(1.1);
+}
